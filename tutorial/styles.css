@@ -5,16 +5,59 @@
   font-style: normal;
 }
 
+/* Preloading overlay styles */
+#preload-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.preload-text {
+  font-family: "Jacquard 12", serif;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.blinking-cursor {
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   background-color: black;
   margin: 0px;
   overflow-y: hidden;
 }
 
 div#frankenstein {
+  position: absolute;
   width: 100vw;
   height: 100vh;
   margin: 0;
+  z-index: -1;
   /* padding: 20px; */
   /* border: 2px solid white; */
   background-color: black;
@@ -24,7 +67,8 @@ p {
   font-family: "Jacquard 12";
   font-size: 18px;
   color: white;
-  z-index: -2;
+  margin: 0;
+  /* z-index: -2; */
   /* line-height: 1.6; */
 }
 
@@ -111,17 +155,25 @@ div#M21 {
 }
 
 div#poem {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 20vw;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 70vw;
   height: auto;
-  z-index: 1;
+  z-index: 2;
   text-align: center;
-  background-color: black;
+  background-color: red;
   color: white;
   padding: 20px;
   font-family: "Jacquard 12";
+  mix-blend-mode: difference;
+}
+
+div#poem > div {
+  background-color: black;
+  padding: 20px;
   mix-blend-mode: color-burn;
 }

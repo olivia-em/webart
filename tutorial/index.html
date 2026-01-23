@@ -3,9 +3,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>miserable</title>
-    <link rel="stylesheet" href="tutorial/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div id="preload-overlay">
+      <span class="preload-text">I am malicious because I am miserable<span class="blinking-cursor">...</span></span>
+    </div>
     <div id="M1"></div>
     <div id="M2"></div>
     <div id="M3"></div>
@@ -91,17 +94,20 @@
       </p>
     </div>
     <div id="poem">
-      <h1>
+      <div><h1>
         doctor doctor <br />
         fix me please<br />
         craft your misery<br />
-        in the image of me <br />
-        <br />
+        in the image of me <br /></h1></div>
+    <div>
+      <h1>
         a year and change <br />
         a knockoff noose<br />
         i feel nothing at all<br />
         but i like to bruise<br />
-        <br />
+       </h1></div>
+    <div>
+      <h1>
         a year and change<br />
         and i am, i am she<br />
         i am the creature<br />
@@ -143,6 +149,13 @@
       window.addEventListener("load", () => {
         showTwoRandomMonsters();
         setInterval(showTwoRandomMonsters, 2000);
+          // Hide preloading overlay after everything is loaded
+          const overlay = document.getElementById("preload-overlay");
+          if (overlay) {
+            overlay.style.transition = "opacity 0.5s";
+            overlay.style.opacity = 0;
+            setTimeout(() => overlay.style.display = "none", 500);
+          }
       });
     </script>
   </body>
