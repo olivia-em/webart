@@ -176,3 +176,30 @@ div#poem > div {
   padding: 20px;
   mix-blend-mode: color-burn;
 }
+
+a#please,
+a#change,
+a#me {
+  /* color: white; */
+  text-decoration: none;
+  border-bottom: none;
+}
+
+a:hover {
+  color: red !important;
+  box-shadow: 0px 0px 30px red;
+}
+
+div.nav {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: white;
+  mix-blend-mode: difference;
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+div.nav:hover {
+  box-shadow: 0px 0px 50px red;
+}
