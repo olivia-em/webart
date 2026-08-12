@@ -1,8 +1,15 @@
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>webart</title>
+    <meta charset="UTF-8" />
+    <title>Sunrise Bakery — Brooklyn, NY</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="images/sunrise-favicon.svg" />
     <link rel="stylesheet" href="style.css" />
     <!-- Start Expona AI Agent Meta Tag -->
     <meta
@@ -12,16 +19,128 @@
     <!-- End Expona AI Agent Meta Tag -->
   </head>
   <body>
-    <div>
-      <ul>
-        <li>
-          <a href="https://portfolio.oliviaem.art" target="_blank" rel="noopener noreferrer">portfolio</a>
-        </li>
-        <li>
-          <a href="https://sunrise.oliviaem.art" target="_blank" rel="noopener noreferrer">expona placeholder</a>
-        </li>
-      </ul>
-    </div>
+    <header>
+      <div class="header-inner">
+        <nav>
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="faq.html">FAQ</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero home-hero">
+        <div class="wrap hero-grid">
+          <div>
+            <p class="section-eyebrow home-location">Brooklyn, NY</p>
+            <h1 class="home-brand">Sunrise Bakery</h1>
+            <p class="home-slogan">Dawn is for the lovers and bakers.</p>
+            <svg class="squiggle" viewBox="0 0 72 12" aria-hidden="true">
+              <path d="M4 10 C 16 1, 56 1, 68 10" />
+              <path d="M22 10 H50" />
+            </svg>
+            <p class="lede">
+              A small Brooklyn bakery that puts the neighborhood first, baking
+              for block parties, birthdays, after-school treats, and the
+              everyday orders that keep a community close.
+            </p>
+            <div class="button-row">
+              <a class="btn btn-primary" href="menu.html">View the menu</a>
+              <a class="btn btn-secondary" href="contact.html">Get in touch</a>
+            </div>
+          </div>
+          <div>
+            <!-- Replace with a hero photo, e.g. a finished layer cake or the storefront -->
+            <img
+              class="hero-image"
+              src="images/stock15.jpg"
+              alt="Freshly baked layer cake on a cooling rack"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap">
+          <p class="section-eyebrow">What we bake</p>
+          <h2>A small menu for the neighborhood</h2>
+          <svg class="squiggle" viewBox="0 0 72 12" aria-hidden="true">
+            <path d="M4 10 C 16 1, 56 1, 68 10" />
+            <path d="M22 10 H50" />
+          </svg>
+
+          <div class="trio">
+            <div class="trio-card">
+              <h3>Round layer cakes</h3>
+              <p>
+                Vanilla, chocolate, lemon, red velvet, and seasonal flavors.
+              </p>
+            </div>
+            <div class="trio-card">
+              <h3>Cookies</h3>
+              <p>Chocolate chip, sugar, and rotating seasonal cookie trays.</p>
+            </div>
+            <div class="trio-card">
+              <h3>Sheet cakes</h3>
+              <p>
+                Vanilla, chocolate, lemon, red velvet, and seasonal rotations.
+              </p>
+            </div>
+          </div>
+          <div class="trio-media-row">
+            <img
+              class="trio-image trio-image-wide"
+              src="images/stock12.jpg"
+              alt="Assorted bakery treats on display"
+            />
+            <img
+              class="trio-image trio-image-tall"
+              src="images/stock10.jpg"
+              alt="Bakery image from the same collection"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap">
+          <div class="cta-band">
+            <div>
+              <h2>Questions about ordering?</h2>
+              <svg class="squiggle" viewBox="0 0 72 12" aria-hidden="true">
+                <path d="M4 10 C 16 1, 56 1, 68 10" />
+                <path d="M22 10 H50" />
+              </svg>
+            </div>
+            <a class="btn btn-primary" href="faq.html">Read the FAQ</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <div>
+          <h4>Sunrise Bakery</h4>
+          <p>140 Bergen Street<br />Brooklyn, NY 11201</p>
+        </div>
+        <div>
+          <h4>Visit</h4>
+          <a href="menu.html">Menu</a>
+          <a href="faq.html">FAQ</a>
+          <a href="about.html">About</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <a href="contact.html">Get in touch</a>
+          <a href="tel:+17185550140">(718) 555-0140</a>
+        </div>
+      </div>
+      <p class="footer-bottom">&copy; 2026 Sunrise Bakery</p>
+    </footer>
     <!-- Start Expona AI Agent -->
     <script src="https://expona.io/embed/embed.js"></script>
     <!-- End Expona AI Agent -->
